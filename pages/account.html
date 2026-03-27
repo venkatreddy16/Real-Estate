@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Access | LuxEstate</title>
+  <meta name="description" content="Access your LuxEstate account to sign in, create a profile, save listings, manage alerts, compare properties, and prepare for personalized property tours.">
+  <meta name="theme-color" content="#16324f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=mobile-actions-20260326">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css?v=mobile-actions-20260326">
+  <link rel="stylesheet" href="../assets/css/rtl.css?v=mobile-actions-20260326">
+</head>
+<body class="account-page" data-prefix="../">
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../pages/index.html" aria-label="LuxEstate home">
+      <span class="brand-mark"><i class="ri-building-2-line"></i></span>
+      <span class="brand-copy">
+        <strong>LuxEstate</strong>
+        <span>Luxury and niche market specialists</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false"><i class="ri-moon-clear-line"></i><span class="visually-hidden">Switch to dark mode</span></button>
+      <button class="icon-btn" type="button" data-dir-toggle aria-label="Toggle RTL" aria-pressed="false"><i class="ri-text-direction-r"></i><span class="visually-hidden">Switch to right to left</span></button>
+      <a class="icon-btn" href="../pages/index.html" aria-label="Home"><i class="ri-home-5-line"></i></a>
+    </div>
+  </div>
+</header>
+  <main class="page-shell auth-shell">
+    <section class="section">
+      <div class="container auth-grid">
+        <div data-reveal>
+          <span class="eyebrow">Account</span>
+          <h1 class="display">Login and sign up on a single page.</h1>
+          <p class="lead">Use the switcher to toggle between sign-in and registration. Validation is included and ready for backend wiring.</p>
+          <div class="inline-image-card" style="margin-top:1.5rem;">
+            <img src="../assets/images/home-2.jpg" alt="Luxury waterfront residence teaser">
+            <div class="overlay-panel">
+              <h3>After login</h3>
+              <p>Users can save listings, set alerts, compare homes, and track visits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="auth-card" data-reveal>
+          <div class="pill-switch" aria-label="Authentication toggle">
+            <button class="is-active" type="button" data-auth-target="login">Login</button>
+            <button type="button" data-auth-target="signup">Sign Up</button>
+          </div>
+          <div data-auth-panel="login" style="margin-top:1.5rem;">
+            <form class="form-grid" data-validate>
+              <div class="form-field">
+                <label for="login-email">Email</label>
+                <input id="login-email" type="email" data-required>
+                <span class="error-text"></span>
+              </div>
+              <div class="form-field">
+                <label for="login-password">Password</label>
+                <input id="login-password" type="password" data-required data-minlength="6">
+                <span class="error-text"></span>
+              </div>
+              <button class="btn btn-primary" type="submit">Login to dashboard</button>
+              <p data-form-status class="kpi-note"></p>
+            </form>
+          </div>
+          <div data-auth-panel="signup" hidden style="margin-top:1.5rem;">
+            <form class="form-grid" data-validate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="signup-name">Full name</label>
+                  <input id="signup-name" type="text" data-required>
+                  <span class="error-text"></span>
+                </div>
+                <div class="form-field">
+                  <label for="signup-phone">Phone</label>
+                  <input id="signup-phone" type="text" data-required>
+                  <span class="error-text"></span>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="signup-email">Email</label>
+                <input id="signup-email" type="email" data-required>
+                <span class="error-text"></span>
+              </div>
+              <div class="form-field">
+                <label for="signup-password">Password</label>
+                <input id="signup-password" type="password" data-required data-minlength="6">
+                <span class="error-text"></span>
+              </div>
+              <button class="btn btn-primary" type="submit">Create account</button>
+              <p data-form-status class="kpi-note"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/js/main.js?v=mobile-actions-20260326"></script>
+</body>
+</html>
+
+

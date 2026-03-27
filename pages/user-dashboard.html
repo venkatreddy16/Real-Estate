@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | LuxEstate</title>
+  <meta name="description" content="Track saved homes, visits, alerts, shortlist activity, profile settings, and buyer preferences in the LuxEstate dashboard built for active buyers daily.">
+  <meta name="theme-color" content="#16324f">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=mobile-actions-20260326"><link rel="stylesheet" href="../assets/css/dark-mode.css?v=mobile-actions-20260326"><link rel="stylesheet" href="../assets/css/rtl.css?v=mobile-actions-20260326">
+</head>
+<body class="dashboard-page user-workspace" data-prefix="../">
+  <main class="page-shell">
+    <section class="dashboard-scene">
+      <div class="dashboard-shell">
+        <div class="dashboard-panel" data-reveal>
+          <div class="dashboard-layout">
+            <aside class="dashboard-sidebar" id="user-dashboard-sidebar">
+              <div class="dashboard-brand">
+                <span class="dashboard-brand-mark"><i class="ri-home-heart-line"></i></span>
+                <div>
+                  <strong>LuxEstate User</strong><br>
+                  <span>Buyer dashboard</span>
+                </div>
+              </div>
+              <div class="dashboard-mobile-controls" aria-label="Dashboard display controls">
+                <a class="icon-btn" href="../pages/account.html" aria-label="Login"><i class="ri-user-3-line"></i><span class="visually-hidden">Login</span></a>
+                <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false"><i class="ri-moon-clear-line"></i><span class="visually-hidden">Switch to dark mode</span></button>
+                <button class="icon-btn" type="button" data-dir-toggle aria-label="Toggle RTL" aria-pressed="false"><i class="ri-text-direction-r"></i><span class="visually-hidden">Switch to right to left</span></button>
+              </div>
+              <ul class="sidebar-menu">
+                <li><a class="active" href="#overview"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <li><a href="#saved"><i class="ri-heart-3-line"></i>Saved Homes</a></li>
+                <li><a href="#insights"><i class="ri-line-chart-line"></i>Insights</a></li>
+                <li><a href="#requests"><i class="ri-calendar-check-line"></i>Visits</a></li>
+                <li><a href="#activity"><i class="ri-notification-3-line"></i>Activity</a></li>
+                <li><a href="#profile"><i class="ri-user-line"></i>Profile</a></li>
+                <li><a href="#preferences"><i class="ri-settings-3-line"></i>Preferences</a></li>
+              </ul>
+              <div class="dashboard-cta">
+                <div class="dashboard-cta-emoji">📌</div>
+                <strong>Buyer checklist</strong>
+                <p class="dashboard-note" style="margin-top:0.45rem;">Review saved homes, confirm visits, and keep your profile updated for better property matches.</p>
+              </div>
+              <div class="dashboard-sidebar-action">
+                <a class="btn dashboard-logout" href="../pages/account.html"><i class="ri-logout-box-r-line"></i>Logout</a>
+              </div>
+            </aside>
+            <div class="dashboard-main">
+              <div class="dashboard-topbar" id="overview">
+                <div class="dashboard-title">
+                  <span class="dashboard-badge"><i class="ri-sparkling-line"></i> Buyer space</span>
+                  <div class="dashboard-title-row">
+                    <button class="dashboard-sidebar-toggle icon-btn" type="button" data-dashboard-sidebar-toggle aria-label="Open dashboard menu" aria-expanded="false" aria-controls="user-dashboard-sidebar"><i class="ri-menu-line"></i><span class="visually-hidden">Open dashboard menu</span></button>
+                    <h1>User dashboard</h1>
+                  </div>
+                  <p>A softer, app-style layout for shortlist management, visit planning, and property tracking.</p>
+                </div>
+                <div class="dashboard-actions">
+                  <a class="dashboard-chip" href="../pages/account.html">Login</a>
+                  <div class="dashboard-toggle-group" aria-label="Dashboard display controls">
+                    <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false"><i class="ri-moon-clear-line"></i><span class="visually-hidden">Switch to dark mode</span></button>
+                    <button class="icon-btn" type="button" data-dir-toggle aria-label="Toggle RTL" aria-pressed="false"><i class="ri-text-direction-r"></i><span class="visually-hidden">Switch to right to left</span></button>
+                  </div>
+                  <div class="dashboard-profile">
+                    <span class="dashboard-avatar">AJ</span>
+                    <div>
+                      <strong>Angelina</strong>
+                      <span class="dashboard-note">buyer</span>
+                    </div>
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-content-grid">
+                <section class="dashboard-overview" data-reveal>
+                  <div class="dashboard-kpis">
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-heart-line"></i><div class="metric-progress" style="--metric-progress:64;"><span>64%</span></div></div>
+                      <div class="metric-value">18</div>
+                      <p class="metric-label">Saved properties</p><span class="metric-trend" style="color:#6d44e0;"><i class="ri-arrow-up-line"></i>4 new</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-search-line"></i><div class="metric-progress" style="--metric-progress:30;"><span>30%</span></div></div>
+                      <div class="metric-value">6</div>
+                      <p class="metric-label">Recent searches</p><span class="metric-trend" style="color:#6d44e0;"><i class="ri-compass-3-line"></i>2 areas</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-calendar-event-line"></i><div class="metric-progress" style="--metric-progress:52;"><span>52%</span></div></div>
+                      <div class="metric-value">3</div>
+                      <p class="metric-label">Scheduled visits</p><span class="metric-trend" style="color:#6d44e0;"><i class="ri-calendar-check-line"></i>This week</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-notification-3-line"></i><div class="metric-progress" style="--metric-progress:72;"><span>72%</span></div></div>
+                      <div class="metric-value">12</div>
+                      <p class="metric-label">Live alerts</p><span class="metric-trend" style="color:#6d44e0;"><i class="ri-notification-3-line"></i>Always on</span>
+                    </article>
+                  </div>
+                  <div class="dashboard-analytics-grid" id="insights">
+                    <article class="dashboard-visual-card">
+                      <div class="dashboard-card-header">
+                        <div><h2>Shortlist activity</h2><p>Your strongest property interest trend this week.</p></div>
+                        <span class="dashboard-chip">Weekly</span>
+                      </div>
+                      <div class="line-chart">
+                        <div class="line-chart-grid">
+                          <div class="line-chart-area"></div>
+                          <div class="line-chart-path">
+                            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                              <polyline fill="none" stroke="#7c5cff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0,72 10,62 20,70 30,50 40,46 50,60 60,32 70,42 80,24 90,36 100,22"></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="line-chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+                      </div>
+                    </article>
+                    <article class="dashboard-visual-card">
+                      <div class="dashboard-card-header">
+                        <div><h2>Match score</h2><p>How closely today’s results fit your brief.</p></div>
+                        <span class="dashboard-chip">Top fit</span>
+                      </div>
+                      <div class="donut-chart">
+                        <div class="donut-ring"><span>82%</span></div>
+                        <div class="donut-legend"><span class="is-blue">Location</span><span class="is-green">Amenities</span><span class="is-pink">Budget</span></div>
+                      </div>
+                    </article>
+                  </div>
+                  <article class="dashboard-visual-card">
+                    <div class="dashboard-card-header">
+                      <div><h2>Preference radar</h2><p>How current matches align with your real estate priorities.</p></div>
+                      <span class="dashboard-chip">Buyer fit</span>
+                    </div>
+                    <div class="hex-chart">
+                      <div class="hex-chart-grid">
+                        <svg viewBox="0 0 220 220" aria-hidden="true">
+                          <polygon points="110,20 184,62 184,148 110,190 36,148 36,62" fill="none" stroke="rgba(124,92,255,0.22)" stroke-width="2"></polygon>
+                          <polygon points="110,48 160,76 160,134 110,162 60,134 60,76" fill="rgba(124,92,255,0.12)" stroke="rgba(124,92,255,0.18)" stroke-width="2"></polygon>
+                          <polygon points="110,36 173,72 154,138 110,170 72,124 76,68" fill="rgba(88,169,107,0.18)" stroke="#6d44e0" stroke-width="3"></polygon>
+                        </svg>
+                      </div>
+                      <div class="hex-chart-legend">
+                        <div><span>Location fit</span><em>91%</em></div>
+                        <div><span>Amenities</span><em>86%</em></div>
+                        <div><span>Privacy</span><em>78%</em></div>
+                        <div><span>Budget match</span><em>73%</em></div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+                <section class="admin-grid-wide" data-reveal>
+                  <div class="admin-stack">
+                  <article class="dashboard-table-card" id="saved">
+                    <div class="dashboard-card-header">
+                      <div><h2>Saved properties</h2><p>Homes currently on your shortlist.</p></div>
+                      <a class="dashboard-chip" href="../pages/properties.html">Browse more</a>
+                    </div>
+                    <div class="table-scroll">
+                      <table>
+                        <thead><tr><th>Property</th><th>Price</th><th>Status</th><th>Action</th></tr></thead>
+                        <tbody>
+                          <tr><td>Sunset Valley Estate</td><td>$8.9M</td><td><span class="status-pill is-blue">Saved</span></td><td>Compare</td></tr>
+                          <tr><td>Azure Bay Residence</td><td>$11.4M</td><td><span class="status-pill is-green">Tour Ready</span></td><td>Schedule</td></tr>
+                          <tr><td>Stone Ridge Manor</td><td>$6.7M</td><td><span class="status-pill is-amber">Watching</span></td><td>Update</td></tr>
+                          <tr><td>Ocean Crest Villa</td><td>$9.8M</td><td><span class="status-pill is-pink">Price Drop</span></td><td>Review</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </article>
+                  <article class="dashboard-visual-card" id="requests">
+                    <div class="dashboard-card-header">
+                      <div><h2>Upcoming visits</h2><p>Your next private tours and confirmations.</p></div>
+                      <span class="dashboard-chip">3 booked</span>
+                    </div>
+                    <div class="dashboard-list">
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-calendar-check-line"></i><div><strong>Azure Bay Residence</strong><span>Saturday, March 14, 2026 at 4:00 PM</span></div></div><span class="status-pill is-green">Confirmed</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-calendar-event-line"></i><div><strong>Sunset Valley Estate</strong><span>Monday, March 16, 2026 at 11:30 AM</span></div></div><span class="status-pill is-blue">Planned</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-time-line"></i><div><strong>Ocean Crest Villa</strong><span>Awaiting owner confirmation</span></div></div><span class="status-pill is-amber">Pending</span></div>
+                    </div>
+                  </article>
+                  </div>
+                  <div class="dashboard-mini-stack" id="activity">
+                    <article class="dashboard-mini-card">
+                      <div class="dashboard-card-header"><div><h3>Visit readiness</h3><p>Tour planning over the week.</p></div></div>
+                      <div class="mini-bars" aria-hidden="true"><span style="height:36%;"></span><span style="height:60%;"></span><span style="height:48%;"></span><span style="height:82%;"></span><span style="height:58%;"></span><span style="height:46%;"></span></div>
+                      <div class="mini-bars-labels"><span>Sat</span><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span></div>
+                    </article>
+                    <article class="dashboard-mini-card">
+                      <div class="dashboard-card-header"><div><h3>Recent activity</h3><p>Your latest buyer-side updates.</p></div></div>
+                      <div class="dashboard-list">
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-calendar-check-line"></i><div><strong>Azure Bay tour confirmed</strong><span>Saturday, March 14 at 4:00 PM</span></div></div><span class="status-pill is-green">Booked</span></div>
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-notification-3-line"></i><div><strong>Price alert received</strong><span>Ocean Crest Villa dropped by 5%</span></div></div><span class="status-pill is-pink">New</span></div>
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-chat-3-line"></i><div><strong>Agent reply landed</strong><span>Sophia Bennett sent new media</span></div></div><span class="status-pill is-blue">Unread</span></div>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+                <section class="dashboard-split-grid" data-reveal>
+                  <article class="dashboard-info-card" id="profile">
+                    <div class="dashboard-card-header">
+                      <div><h3>Profile snapshot</h3><p>Buyer readiness across your active profile details.</p></div>
+                      <span class="dashboard-chip">Updated today</span>
+                    </div>
+                    <div class="market-bars">
+                      <div class="market-bar-row"><strong>Location brief</strong><div class="market-bar-track"><span style="width:91%;"></span></div><span>91%</span></div>
+                      <div class="market-bar-row"><strong>Budget clarity</strong><div class="market-bar-track"><span style="width:84%;"></span></div><span>84%</span></div>
+                      <div class="market-bar-row"><strong>Amenity focus</strong><div class="market-bar-track"><span style="width:88%;"></span></div><span>88%</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card" id="preferences">
+                    <div class="dashboard-card-header">
+                      <div><h3>Search preferences</h3><p>Your strongest filters shaping new property matches.</p></div>
+                      <span class="dashboard-chip">5 live rules</span>
+                    </div>
+                    <div class="market-bars">
+                      <div class="market-bar-row"><strong>Waterfront</strong><div class="market-bar-track"><span style="width:96%;"></span></div><span>96%</span></div>
+                      <div class="market-bar-row"><strong>Privacy</strong><div class="market-bar-track"><span style="width:82%;"></span></div><span>82%</span></div>
+                      <div class="market-bar-row"><strong>Wellness</strong><div class="market-bar-track"><span style="width:76%;"></span></div><span>76%</span></div>
+                      <div class="market-bar-row"><strong>Virtual tours</strong><div class="market-bar-track"><span style="width:68%;"></span></div><span>68%</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Alerts and notifications</h3><p>Most relevant live updates in your buyer flow.</p></div>
+                      <span class="dashboard-chip">12 alerts</span>
+                    </div>
+                    <div class="dashboard-list">
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-price-tag-3-line"></i><div><strong>Price drop trigger</strong><span>Ocean Crest Villa moved down by 5%</span></div></div><span class="status-pill is-pink">New</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-home-smile-line"></i><div><strong>Fresh match added</strong><span>2 waterfront homes entered your saved range</span></div></div><span class="status-pill is-green">Match</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-image-line"></i><div><strong>Media update</strong><span>Azure Bay Residence uploaded a new walkthrough</span></div></div><span class="status-pill is-blue">Media</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Compare and reviews</h3><p>How your top homes perform side by side.</p></div>
+                      <span class="dashboard-chip">3 homes</span>
+                    </div>
+                    <div class="market-bars">
+                      <div class="market-bar-row"><strong>Azure Bay</strong><div class="market-bar-track"><span style="width:89%;"></span></div><span>89</span></div>
+                      <div class="market-bar-row"><strong>Sunset Valley</strong><div class="market-bar-track"><span style="width:84%;"></span></div><span>84</span></div>
+                      <div class="market-bar-row"><strong>Ocean Crest</strong><div class="market-bar-track"><span style="width:78%;"></span></div><span>78</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Neighborhood shortlist</h3><p>Interest levels across your most-viewed communities.</p></div>
+                      <span class="dashboard-chip">Top areas</span>
+                    </div>
+                    <div class="mini-bars" aria-hidden="true"><span style="height:88%;"></span><span style="height:72%;"></span><span style="height:64%;"></span><span style="height:79%;"></span><span style="height:58%;"></span><span style="height:69%;"></span></div>
+                    <div class="mini-bars-labels"><span>Miami B</span><span>Brickell</span><span>Coconut</span><span>Key Bisc</span><span>Coral G</span><span>Sunny Is</span></div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Mortgage and budget</h3><p>Budget comfort by price band for your next move.</p></div>
+                      <span class="dashboard-chip">Finance view</span>
+                    </div>
+                    <div class="line-chart">
+                      <div class="line-chart-grid">
+                        <div class="line-chart-area" style="clip-path: polygon(0% 82%, 10% 74%, 20% 58%, 30% 44%, 40% 34%, 50% 30%, 60% 38%, 70% 50%, 80% 62%, 90% 71%, 100% 80%, 100% 100%, 0 100%);"></div>
+                        <div class="line-chart-path">
+                          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                            <polyline fill="none" stroke="#35a3ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0,82 10,74 20,58 30,44 40,34 50,30 60,38 70,50 80,62 90,71 100,80"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="line-chart-labels"><span>$6M</span><span>$7M</span><span>$8M</span><span>$9M</span><span>$10M</span><span>$11M</span></div>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/js/main.js?v=mobile-actions-20260326"></script><script src="../assets/js/dashboard.js?v=mobile-actions-20260326"></script>
+</body>
+</html>
+
+
+

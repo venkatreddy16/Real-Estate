@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="luxestate-gradient" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#214f7b" />
+      <stop offset="100%" stop-color="#0f2236" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#luxestate-gradient)" />
+  <path
+    d="M18 46V24.5L32 15l14 9.5V46h-6V27.8l-8-5.4-8 5.4V46Zm11-6h6v6h-6Zm0-10h6v8h-6Z"
+    fill="#f4ede1"
+  />
+</svg>

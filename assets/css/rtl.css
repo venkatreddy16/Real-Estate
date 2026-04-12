@@ -1,0 +1,110 @@
+﻿html[dir="rtl"] body { text-align: right; }
+html[dir="rtl"] .header-inner,
+html[dir="rtl"] .section-header,
+html[dir="rtl"] .hero-grid,
+html[dir="rtl"] .feature-panel,
+html[dir="rtl"] .about-panel,
+html[dir="rtl"] .split-panel,
+html[dir="rtl"] .footer-bottom,
+html[dir="rtl"] .footer-grid,
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .stack-inline,
+html[dir="rtl"] .tag-row,
+html[dir="rtl"] .meta-row,
+html[dir="rtl"] .header-actions,
+html[dir="rtl"] .password-meta,
+html[dir="rtl"] .auth-switch-row,
+html[dir="rtl"] .auth-kpis { direction: rtl; }
+html[dir="rtl"] .brand,
+html[dir="rtl"] .menu-link,
+html[dir="rtl"] .menu-button,
+html[dir="rtl"] .sidebar-menu a,
+html[dir="rtl"] .toggle-auth,
+html[dir="rtl"] .eyebrow { flex-direction: row-reverse; }
+html[dir="rtl"] .brand {
+  text-align: right;
+}
+html[dir="rtl"] .brand-copy {
+  direction: rtl;
+  text-align: right;
+}
+html[dir="rtl"] .brand-mark {
+  order: 2;
+}
+html[dir="rtl"] .brand-copy {
+  order: 1;
+}
+html[dir="rtl"] .header-actions {
+  margin-left: 0;
+}
+html[dir="rtl"] .submenu { inset-inline-start: auto; inset-inline-end: 0; }
+html[dir="rtl"] th,
+html[dir="rtl"] td { text-align: right; }
+html[dir="rtl"] .hero-badge { inset-inline-start: auto; inset-inline-end: var(--space-4); }
+html[dir="rtl"] .password-toggle {
+  right: auto;
+  left: 0.7rem;
+}
+html[dir="rtl"] .password-field-wrap input {
+  padding-right: 1rem;
+  padding-left: 3.25rem;
+}
+html[dir="rtl"] .remember-check input {
+  order: 2;
+}
+html[dir="rtl"] .footer-grid {
+  text-align: right;
+}
+html[dir="rtl"] .footer .brand,
+html[dir="rtl"] .footer .brand-copy,
+html[dir="rtl"] .footer .list-clean,
+html[dir="rtl"] .footer a,
+html[dir="rtl"] .footer .list-clean span,
+html[dir="rtl"] .footer .list-clean p {
+  text-align: right;
+}
+html[dir="rtl"] .footer-bottom {
+  justify-content: space-between;
+}
+html[dir="rtl"] .footer-bottom span:last-child {
+  text-align: right;
+}
+html[dir="rtl"] .home-two-page .home-two-accordion-toggle,
+html[dir="rtl"] .contact-page .contact-faq-toggle,
+html[dir="rtl"] .sell-page .sell-link-card {
+  text-align: right;
+}
+html[dir="rtl"] .home-two-page .home-two-accordion-toggle,
+html[dir="rtl"] .contact-page .contact-faq-toggle {
+  flex-direction: row-reverse;
+}
+html[dir="rtl"] .home-two-page .home-two-accordion-panel {
+  padding: 0 5.35rem 1.3rem 1.35rem;
+}
+html[dir="rtl"] .contact-page .contact-faq-toggle span {
+  text-align: right;
+}
+html[dir="rtl"] .menu-link:after,
+html[dir="rtl"] .menu-button:after {
+  transform-origin: right center;
+}
+
+@media (max-width: 1023.98px) {
+  html[dir="rtl"] .header-inner {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  html[dir="rtl"] .brand {
+    justify-self: end;
+  }
+
+  html[dir="rtl"] .header-actions {
+    justify-self: start;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  html[dir="rtl"] .footer-bottom span:last-child {
+    text-align: right;
+  }
+}

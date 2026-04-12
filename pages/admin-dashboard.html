@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | LuxEstate</title>
+  <meta name="description" content="Manage listings, leads, agents, content, bookings, payments, and reporting inside the LuxEstate admin dashboard built for premium real estate operations.">
+  <meta name="theme-color" content="#16324f">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="../assets/css/style.css?v=site-refresh-20260408"><link rel="stylesheet" href="../assets/css/dark-mode.css?v=site-refresh-20260408"><link rel="stylesheet" href="../assets/css/rtl.css?v=site-refresh-20260408">
+</head>
+<body class="dashboard-page admin-workspace" data-prefix="../">
+  <main class="page-shell">
+    <section class="dashboard-scene">
+      <div class="dashboard-shell">
+        <div class="dashboard-panel" data-reveal>
+          <div class="dashboard-layout">
+            <aside class="dashboard-sidebar" id="admin-dashboard-sidebar">
+              <div class="dashboard-brand">
+                <span class="dashboard-brand-mark"><i class="ri-building-2-line"></i></span>
+                <div>
+                  <strong>LuxEstate Admin</strong>
+                  <span>Operations dashboard</span>
+                </div>
+              </div>
+              <div class="dashboard-mobile-controls" aria-label="Dashboard display controls">
+                <a class="icon-btn" href="../pages/account.html" aria-label="Login"><i class="ri-user-3-line"></i><span class="visually-hidden">Login</span></a>
+                <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false"><i class="ri-moon-clear-line"></i><span class="visually-hidden">Switch to dark mode</span></button>
+                <button class="icon-btn" type="button" data-dir-toggle aria-label="Toggle RTL" aria-pressed="false"><i class="ri-text-direction-r"></i><span class="visually-hidden">Switch to right to left</span></button>
+              </div>
+              <ul class="sidebar-menu">
+                <li><a class="active" href="#overview"><i class="ri-dashboard-line"></i>Dashboard</a></li>
+                <li><a href="#properties"><i class="ri-home-5-line"></i>Properties</a></li>
+                <li><a href="#pipeline"><i class="ri-line-chart-line"></i>Reports</a></li>
+                <li><a href="#orders"><i class="ri-file-list-3-line"></i>Orders</a></li>
+                <li><a href="#team"><i class="ri-team-line"></i>Agents</a></li>
+                <li><a href="#activity"><i class="ri-notification-3-line"></i>Activity</a></li>
+                <li><a href="#settings"><i class="ri-settings-3-line"></i>Settings</a></li>
+              </ul>
+              <div class="dashboard-cta">
+                <div class="dashboard-cta-emoji">📈</div>
+                <strong>Weekly target</strong>
+                <p class="dashboard-note" style="margin-top:0.45rem;">Revenue pacing is ahead of forecast by 12% this week.</p>
+              </div>
+              <div class="dashboard-sidebar-action">
+                <a class="btn dashboard-logout" href="../pages/account.html"><i class="ri-logout-box-r-line"></i>Logout</a>
+              </div>
+            </aside>
+            <div class="dashboard-main">
+              <div class="dashboard-topbar" id="overview">
+                <div class="dashboard-title">
+                  <span class="dashboard-badge"><i class="ri-flashlight-line"></i> Live overview</span>
+                  <div class="dashboard-title-row">
+                    <button class="dashboard-sidebar-toggle icon-btn" type="button" data-dashboard-sidebar-toggle aria-label="Open dashboard menu" aria-expanded="false" aria-controls="admin-dashboard-sidebar"><i class="ri-menu-line"></i><span class="visually-hidden">Open dashboard menu</span></button>
+                    <h1 style="margin-top:0.8rem;">Admin dashboard</h1>
+                  </div>
+                  <p style="margin-top:0.45rem;">A softer SaaS-style control panel for listings, users, revenue, and conversion signals.</p>
+                </div>
+                <div class="dashboard-actions">
+                  <a class="dashboard-chip" href="../pages/account.html">Login</a>
+                  <div class="dashboard-toggle-group" aria-label="Dashboard display controls">
+                    <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme" aria-pressed="false"><i class="ri-moon-clear-line"></i><span class="visually-hidden">Switch to dark mode</span></button>
+                    <button class="icon-btn" type="button" data-dir-toggle aria-label="Toggle RTL" aria-pressed="false"><i class="ri-text-direction-r"></i><span class="visually-hidden">Switch to right to left</span></button>
+                  </div>
+                  <div class="dashboard-profile">
+                    <span class="dashboard-avatar is-admin">AD</span>
+                    <div>
+                      <strong>Admin Team</strong>
+                      <span class="dashboard-note">Control room</span>
+                    </div>
+                    <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard-content-grid">
+                <section class="dashboard-overview" data-reveal>
+                  <div class="dashboard-kpis">
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-building-line"></i><div class="metric-progress" style="--metric-progress:80;"><span>80%</span></div></div>
+                      <div class="metric-value">284</div>
+                      <p class="metric-label">Total properties</p><span class="metric-trend"><i class="ri-arrow-up-line"></i>8.4%</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-home-gear-line"></i><div class="metric-progress" style="--metric-progress:66;"><span>66%</span></div></div>
+                      <div class="metric-value">196</div>
+                      <p class="metric-label">Active listings</p><span class="metric-trend"><i class="ri-arrow-up-line"></i>12 new</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-user-3-line"></i><div class="metric-progress" style="--metric-progress:52;"><span>52%</span></div></div>
+                      <div class="metric-value">1,482</div>
+                      <p class="metric-label">Active users</p><span class="metric-trend"><i class="ri-arrow-up-line"></i>5.1%</span>
+                    </article>
+                    <article class="dashboard-metric">
+                      <div class="dashboard-metric-head"><i class="ri-money-dollar-circle-line"></i><div class="metric-progress" style="--metric-progress:74;"><span>74%</span></div></div>
+                      <div class="metric-value">$124K</div>
+                      <p class="metric-label">Monthly revenue</p><span class="metric-trend is-down"><i class="ri-arrow-down-line"></i>2.3%</span>
+                    </article>
+                  </div>
+                  <div class="admin-grid-wide">
+                    <div class="admin-stack">
+                      <div class="dashboard-analytics-grid">
+                    <article class="dashboard-visual-card" id="pipeline">
+                      <div class="dashboard-card-header">
+                        <div><h2>Sales reports</h2><p>Tour-to-close movement across the current week.</p></div>
+                        <span class="dashboard-chip">Weekly</span>
+                      </div>
+                      <div class="line-chart">
+                        <div class="line-chart-grid">
+                          <div class="line-chart-area"></div>
+                          <div class="line-chart-path">
+                            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                              <polyline fill="none" stroke="#35a3ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0,74 10,58 20,67 30,44 40,52 50,28 60,48 70,33 80,38 90,19 100,30"></polyline>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="line-chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+                      </div>
+                    </article>
+                    <article class="dashboard-visual-card" id="properties">
+                      <div class="dashboard-card-header">
+                        <div><h2>Inventory mix</h2><p>How active stock is split right now.</p></div>
+                        <span class="dashboard-chip">70% healthy</span>
+                      </div>
+                      <div class="donut-chart">
+                        <div class="donut-ring"><span>70%</span></div>
+                        <div class="donut-legend"><span class="is-blue">Sale</span><span class="is-green">Rented</span><span class="is-pink">Return</span></div>
+                      </div>
+                    </article>
+                      </div>
+                      <article class="dashboard-visual-card">
+                        <div class="dashboard-card-header">
+                          <div><h2>Lead pipeline</h2><p>Current conversion load by stage.</p></div>
+                          <span class="dashboard-chip">This month</span>
+                        </div>
+                        <div class="dashboard-list">
+                          <div class="dashboard-list-item"><div><strong>New inquiries</strong><span>89 incoming buyer leads</span></div><span class="status-pill is-blue">89</span></div>
+                          <div class="dashboard-list-item"><div><strong>Qualified</strong><span>31 leads cleared by team</span></div><span class="status-pill is-green">31</span></div>
+                          <div class="dashboard-list-item"><div><strong>Tours booked</strong><span>12 private showings set</span></div><span class="status-pill is-amber">12</span></div>
+                          <div class="dashboard-list-item"><div><strong>Closings pending</strong><span>4 deals awaiting docs</span></div><span class="status-pill is-pink">4</span></div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="admin-stack">
+                      <article class="dashboard-mini-card">
+                        <div class="dashboard-card-header"><div><h3>Ops timeline</h3><p>What the team should touch today.</p></div></div>
+                        <div class="admin-timeline">
+                          <div class="admin-timeline-item"><strong>09:00 AM</strong><span>Approve premium listing placements for waterfront inventory.</span></div>
+                          <div class="admin-timeline-item"><strong>11:30 AM</strong><span>Review 14 unanswered buyer inquiries and assign to agents.</span></div>
+                          <div class="admin-timeline-item"><strong>02:00 PM</strong><span>Publish neighborhood guide update for Miami Beach demand shifts.</span></div>
+                          <div class="admin-timeline-item"><strong>05:30 PM</strong><span>Reconcile membership invoices and renewal alerts.</span></div>
+                        </div>
+                      </article>
+                      <article class="dashboard-mini-card">
+                        <div class="dashboard-card-header"><div><h3>Admin focus</h3><p>Platform health and moderation.</p></div></div>
+                        <div class="dashboard-list">
+                          <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-star-line"></i><div><strong>Reviews queue cleared</strong><span>All flagged submissions checked</span></div></div><span class="status-pill is-green">Done</span></div>
+                          <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-megaphone-line"></i><div><strong>Campaign draft ready</strong><span>Launch luxury spring push today</span></div></div><span class="status-pill is-blue">Ready</span></div>
+                          <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-shield-check-line"></i><div><strong>Security status stable</strong><span>No suspicious account spikes</span></div></div><span class="status-pill is-green">Safe</span></div>
+                        </div>
+                      </article>
+                      <article class="dashboard-mini-card">
+                        <div class="dashboard-card-header"><div><h3>Market demand</h3><p>Inquiry share by luxury segment.</p></div></div>
+                        <div class="market-bars">
+                          <div class="market-bar-row"><strong>Waterfront</strong><div class="market-bar-track"><span style="width:84%;"></span></div><em>84%</em></div>
+                          <div class="market-bar-row"><strong>Penthouses</strong><div class="market-bar-track"><span style="width:63%;"></span></div><em>63%</em></div>
+                          <div class="market-bar-row"><strong>Golf estates</strong><div class="market-bar-track"><span style="width:56%;"></span></div><em>56%</em></div>
+                          <div class="market-bar-row"><strong>Branded homes</strong><div class="market-bar-track"><span style="width:48%;"></span></div><em>48%</em></div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </section>
+                <section class="dashboard-bottom-grid" data-reveal>
+                  <article class="dashboard-table-card" id="orders">
+                    <div class="dashboard-card-header">
+                      <div><h2>Property management</h2><p>Priority listings currently under team review.</p></div>
+                      <a class="dashboard-chip" href="#team">Assign agents</a>
+                    </div>
+                    <div class="table-scroll">
+                      <table>
+                        <thead><tr><th>Property</th><th>Status</th><th>Agent</th><th>Tour</th><th>Gallery</th></tr></thead>
+                        <tbody>
+                          <tr><td>Sunset Valley Estate</td><td><span class="status-pill is-blue">Featured</span></td><td>Michael Carter</td><td>Added</td><td>26 images</td></tr>
+                          <tr><td>Azure Bay Residence</td><td><span class="status-pill is-green">Booked</span></td><td>Sophia Bennett</td><td>Added</td><td>18 images</td></tr>
+                          <tr><td>Stone Ridge Manor</td><td><span class="status-pill is-pink">Sold</span></td><td>Daniel Ross</td><td>Pending</td><td>14 images</td></tr>
+                          <tr><td>Cliffside Horizon</td><td><span class="status-pill is-amber">Review</span></td><td>Angelina Joli</td><td>Queued</td><td>12 images</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </article>
+                  <div class="dashboard-mini-stack" id="activity">
+                    <article class="dashboard-mini-card">
+                      <div class="dashboard-card-header"><div><h3>Analytics</h3><p>Lead spikes by weekday.</p></div></div>
+                      <div class="mini-bars" aria-hidden="true"><span style="height:58%;"></span><span style="height:74%;"></span><span style="height:42%;"></span><span style="height:88%;"></span><span style="height:56%;"></span><span style="height:48%;"></span></div>
+                      <div class="mini-bars-labels"><span>Sat</span><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span></div>
+                    </article>
+                    <article class="dashboard-mini-card">
+                      <div class="dashboard-card-header"><div><h3>Recent activity</h3><p>Fast operational updates.</p></div></div>
+                      <div class="dashboard-list">
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-team-line"></i><div><strong>34 agents active</strong><span>3 new performance reviews</span></div></div><span class="status-pill is-blue">Updated</span></div>
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-mail-send-line"></i><div><strong>89 new inquiries</strong><span>14 need assignment today</span></div></div><span class="status-pill is-green">Live</span></div>
+                        <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-bank-card-line"></i><div><strong>Membership revenue cleared</strong><span>Private client renewals posted</span></div></div><span class="status-pill is-pink">Done</span></div>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+                <section class="dashboard-split-grid" data-reveal>
+                  <article class="dashboard-info-card" id="team">
+                    <div class="dashboard-card-header">
+                      <div><h3>Agent management</h3><p>Performance view across active agents and response quality.</p></div>
+                      <span class="dashboard-chip">34 active</span>
+                    </div>
+                    <div class="market-bars">
+                      <div class="market-bar-row"><strong>Michael Carter</strong><div class="market-bar-track"><span style="width:88%;"></span></div><span>88%</span></div>
+                      <div class="market-bar-row"><strong>Sophia Bennett</strong><div class="market-bar-track"><span style="width:82%;"></span></div><span>82%</span></div>
+                      <div class="market-bar-row"><strong>Daniel Ross</strong><div class="market-bar-track"><span style="width:74%;"></span></div><span>74%</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>User management</h3><p>Engagement distribution across key buyer activity groups.</p></div>
+                      <span class="dashboard-chip">1,482 users</span>
+                    </div>
+                    <div class="donut-chart">
+                      <div class="donut-ring"><span>42%</span></div>
+                      <div class="donut-legend"><span class="is-blue">Active</span><span class="is-green">Returning</span><span class="is-pink">Dormant</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Market watch</h3><p>Weekly demand movement across high-value markets.</p></div>
+                      <span class="dashboard-chip">Live trend</span>
+                    </div>
+                    <div class="line-chart">
+                      <div class="line-chart-grid">
+                        <div class="line-chart-area" style="clip-path: polygon(0% 78%, 10% 66%, 20% 69%, 30% 48%, 40% 42%, 50% 36%, 60% 30%, 70% 38%, 80% 29%, 90% 35%, 100% 24%, 100% 100%, 0 100%);"></div>
+                        <div class="line-chart-path">
+                          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                            <polyline fill="none" stroke="#35a3ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0,78 10,66 20,69 30,48 40,42 50,36 60,30 70,38 80,29 90,35 100,24"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="line-chart-labels"><span>Miami</span><span>Austin</span><span>LA</span><span>Naples</span><span>Dallas</span><span>NYC</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Featured communities</h3><p>Destination page attention across top luxury locations.</p></div>
+                      <span class="dashboard-chip">Most viewed</span>
+                    </div>
+                    <div class="mini-bars" aria-hidden="true"><span style="height:90%;"></span><span style="height:84%;"></span><span style="height:68%;"></span><span style="height:80%;"></span><span style="height:59%;"></span><span style="height:72%;"></span></div>
+                    <div class="mini-bars-labels"><span>Palm Is</span><span>Malibu</span><span>Brickell</span><span>Naples</span><span>Austin</span><span>Miami B</span></div>
+                  </article>
+                  <article class="dashboard-info-card">
+                    <div class="dashboard-card-header">
+                      <div><h3>Content and reviews</h3><p>Editorial, testimonial, and moderation health in one view.</p></div>
+                      <span class="dashboard-chip">Queue clear</span>
+                    </div>
+                    <div class="dashboard-list">
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-article-line"></i><div><strong>Guide traffic rising</strong><span>Neighborhood content is leading organic conversions</span></div></div><span class="status-pill is-green">Strong</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-star-line"></i><div><strong>Review approvals</strong><span>Average moderation turnaround is under 24 hours</span></div></div><span class="status-pill is-blue">Stable</span></div>
+                      <div class="dashboard-list-item"><div class="dashboard-list-copy"><i class="ri-flag-line"></i><div><strong>Flagged items</strong><span>Only 2 submissions are awaiting manual check</span></div></div><span class="status-pill is-amber">2 open</span></div>
+                    </div>
+                  </article>
+                  <article class="dashboard-info-card" id="settings">
+                    <div class="dashboard-card-header">
+                      <div><h3>Settings and platform health</h3><p>Core configuration stability across admin systems.</p></div>
+                      <span class="dashboard-chip">System OK</span>
+                    </div>
+                    <div class="market-bars">
+                      <div class="market-bar-row"><strong>Email templates</strong><div class="market-bar-track"><span style="width:93%;"></span></div><span>93%</span></div>
+                      <div class="market-bar-row"><strong>SEO blocks</strong><div class="market-bar-track"><span style="width:87%;"></span></div><span>87%</span></div>
+                      <div class="market-bar-row"><strong>Mobile stability</strong><div class="market-bar-track"><span style="width:91%;"></span></div><span>91%</span></div>
+                      <div class="market-bar-row"><strong>Theme sync</strong><div class="market-bar-track"><span style="width:95%;"></span></div><span>95%</span></div>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../assets/js/main.js?v=site-refresh-20260408"></script><script src="../assets/js/dashboard.js?v=site-refresh-20260408"></script>
+</body>
+</html>
+
+
